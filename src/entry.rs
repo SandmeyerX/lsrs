@@ -1,3 +1,4 @@
+use chrono::{TimeZone, Utc};
 use colored::{Color, Colorize};
 use mime_guess::from_path;
 use mime_guess::mime::{APPLICATION, IMAGE, TEXT, VIDEO};
@@ -9,8 +10,6 @@ use std::path::Path;
 use std::time::SystemTime;
 
 use crate::cli::Flags;
-
-use chrono::{TimeZone, Utc};
 
 
 /// Enum to represent directories or files
